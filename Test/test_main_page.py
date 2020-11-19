@@ -89,6 +89,12 @@ class Test_loginPage(BaseTest):
         else:
             print("bod year element is not selected")
 
+        self.rf.submit_password(TestData.SUBMIT_PASSWORD)
+        self.rf.confirm_password(TestData.CONFIRM_SUBMIT_PASSWORD)
+        self.rf.press_submit()
+
+
+
 
 
 

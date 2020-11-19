@@ -28,7 +28,9 @@ class RegisterPage():
         self.select_dob_month_xpath = Locators.DOB_MONTH_XPATH
         self.select_dob_date_id = Locators.DOB_DATE_ID
         self.upload_profile_picture = Locators.UPLOAD_PROFILE_PICTURE_ID
-
+        self.set_password_id = Locators.SET_PASSWORD_ID
+        self.confirm_password_id = Locators.CONFIRM_PASSWORD_ID
+        self.submit_button_id = Locators.SUBMIT_BUTTON_ID
 
     def enter_firstname(self, firstname):
         self.driver.find_element(By.XPATH, self.enter_first_name_xpath).send_keys(firstname)
@@ -89,11 +91,9 @@ class RegisterPage():
         element1 = self.driver.find_element_by_id(Locators.DOB_YEAR_ID)
         ele = Select(element1)
         ele.select_by_visible_text("1991")
-
         element1 = self.driver.find_element(By.XPATH, Locators.DOB_MONTH_XPATH)
         sel = Select(element1)
         sel.select_by_visible_text("November")
-
         element1 = self.driver.find_element(By.ID, Locators.DOB_DATE_ID)
         sel = Select(element1)
         sel.select_by_index(14)
@@ -101,50 +101,14 @@ class RegisterPage():
     def upload_profile_image(self, profile_picture):
         self.driver.find_element(By.ID, self.upload_profile_picture).send_keys(profile_picture)
 
+    def submit_password(self, password):
+        self.driver.find_element(By.ID, self.set_password_id).send_keys(password)
 
+    def confirm_password(self,confirm_password):
+        self.driver.find_element(By.ID, self.confirm_password_id).send_keys(confirm_password)
 
-
-
-
-
-    #
-    # @pytest.mark.run(order=10)
-    # def test_select_dob(self):
-    #     element1 = self.driver.find_element_by_id(Locators.DOB_YEAR_ID)
-    #     sel = Select(element1)
-    #     sel.select_by_visible_text("1991")
-    #
-    #     element1 = self.driver.find_element(By.XPATH, Locators.DOB_MONTH_XPATH)
-    #     sel = Select(element1)
-    #     sel.select_by_visible_text("November")
-    #
-    #     element1 = self.driver.find_element(By.ID, Locators.DOB_DATE_ID)
-    #     sel = Select(element1)
-    #     sel.select_by_index(14)
-    #
-    # @pytest.mark.run(order=11)
-    # def test_set_password(self):
-    #     enter_password = self.driver.find_element(By.ID, Locators.SET_PASSWORD_ID)
-    #     enter_password.send_keys(TestData.ENTER_PASSWORD)
-    #
-    #     confirm_password = self.driver.find_element(By.ID, Locators.CONFIRM_PASSWORD_ID)
-    #     confirm_password.send_keys(TestData.CONFIRM_PASSWORD)
-    #
-    # @pytest.mark.run(order=12)
-    # def test_upload_profile_picture(self):
-    #     uploadFile = self.driver.find_element_by_id(Locators.UPLOAD_PROFILE_PICTURE_ID)
-    #     uploadFile.send_keys(Locators.PROFILE_IMAGE_PATH)
-    #     time.sleep(2)
-
-
-
-
-
-
-
-
-
-
+    def press_submit(self):
+        self.driver.find_element(By.ID, self.submit_button_id).click()
 
 
 

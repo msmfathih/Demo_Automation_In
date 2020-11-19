@@ -55,7 +55,7 @@ class Locators:
     CONFIRM_PASSWORD_ID  = "secondpassword"
     UPLOAD_PROFILE_PICTURE_ID = "imagesrc"
     PROFILE_IMAGE_PATH = "C://Users//fathih//PycharmProjects//RentVehicles//driver_registration_flow//Image//python.png"
-
+    SUBMIT_BUTTON_ID = "submitbtn"
 
 
     """

@@ -26,6 +26,10 @@ class TestData:
 
     ENTER_EMAIL = "fazil@gmail.com"
     ENTER_PHONE_NUMBER = "0528542762"
+    SUBMIT_PASSWORD = "123@admin"
+    CONFIRM_SUBMIT_PASSWORD = '123@admin'
+
+
 
 
 
