@@ -72,6 +72,7 @@ class Test_loginPage(BaseTest):
         self.rf = RegisterPage(self.driver)
         self.rf.enter_firstname(TestData.FIRST_NAME),time.sleep(2)
         self.rf.enter_lastname(TestData.LAST_NAME)
+        self.rf.upload_profile_image(TestData.FILE_UPLOAD_PATH)
         self.rf.enter_address(TestData.ADDRESS)
         self.rf.enter_email_address(TestData.ENTER_VALID_EMAIL_ID)
         self.rf.enter_phone_number(TestData.ENTER_PHONE_NUMBER)

@@ -9,6 +9,7 @@ class TestData:
     ENTER_VALID_EMAIL_ID = "admin@gmail.com"
     ADDRESS = "Abu Dhabi, Al Nahyan, Building 65, Room:403"
     PHONE_NUMBER = "0528542762"
+    FILE_UPLOAD_PATH = "C://Users//fathih//PycharmProjects//demo_automation_in//Test//Image//myavatar.png"
 
 
     ENTER_PASSWORD = "abc@123"
@@ -25,6 +26,7 @@ class TestData:
 
     ENTER_EMAIL = "fazil@gmail.com"
     ENTER_PHONE_NUMBER = "0528542762"
+
 
 
 

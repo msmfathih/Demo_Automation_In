@@ -27,6 +27,7 @@ class RegisterPage():
         self.select_dob_year_id = Locators.DOB_YEAR_ID
         self.select_dob_month_xpath = Locators.DOB_MONTH_XPATH
         self.select_dob_date_id = Locators.DOB_DATE_ID
+        self.upload_profile_picture = Locators.UPLOAD_PROFILE_PICTURE_ID
 
 
     def enter_firstname(self, firstname):
@@ -96,6 +97,11 @@ class RegisterPage():
         element1 = self.driver.find_element(By.ID, Locators.DOB_DATE_ID)
         sel = Select(element1)
         sel.select_by_index(14)
+
+    def upload_profile_image(self, profile_picture):
+        self.driver.find_element(By.ID, self.upload_profile_picture).send_keys(profile_picture)
+
+
 
 
 
