@@ -82,7 +82,7 @@ class RegisterPage():
         dropdown = self.driver.find_element(By.ID, self.select_country_id)
         select2 = Select(dropdown)
         select2.select_by_visible_text("Australia")
-        time.sleep(2)
+        time.sleep(3)
 
     def select_dob(self):
         element1 = self.driver.find_element_by_id(Locators.DOB_YEAR_ID)
