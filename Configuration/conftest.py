@@ -16,5 +16,20 @@ def init_driver(request):
 
     request.cls.driver = web_driver
     yield
-    # web_driver.close()
+    web_driver.close()
+
+
+
+def pytest_configure(config):
+    config._metadata['Project Name'] = 'Registration Demo'
+    config._metadata['Module Name'] = 'User'
+    config._metadata['Engineer'] = 'Fathih'
+
+@pytest.mark.optionalhook
+def pytest_metadata(metadata):
+    metadata.pop("JAVA_HOME", None)
+    metadata.pop("Plugins", None)
+
+
+
 
