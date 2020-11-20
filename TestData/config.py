@@ -14,7 +14,6 @@ class TestData:
 
     ENTER_PASSWORD = "abc@123"
     CONFIRM_PASSWORD = "abc@123"
-
     DROPDOWN_LANGUAGE = "English"
     DROPDOWN_LANGUAGE2 = "Arabic"
 

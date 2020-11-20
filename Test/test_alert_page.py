@@ -23,6 +23,7 @@ class Test_loginPage(BaseTest):
     def test_enter_valid_password(self):
         self.driver.get(TestData.BASE_URL)
         self.driver.implicitly_wait(15)
+
         self.lp = LoginPage(self.driver)
         self.lp.enter_valid_email(TestData.USERNAME),time.sleep(1)
         self.lp.press_index_login()
@@ -32,6 +33,13 @@ class Test_loginPage(BaseTest):
             print("Verified Page Name")
         else:
             print("Page name is not verified")
+
+        act_title = self.driver.title
+        if act_title =="Register":
+            assert True
+        else:
+            assert False
+
         link = None
         while not link:
             try:
@@ -40,6 +48,11 @@ class Test_loginPage(BaseTest):
             except NoSuchElementException:
                 time.sleep(2)
 
+        act_current_url = self.driver.current_url
+        if act_current_url =="http://demo.automationtesting.in/Register.html":
+            assert True
+        else:
+            assert False
 
     def test_alert_page(self):
         self.ap = AlertPage(self.driver)
