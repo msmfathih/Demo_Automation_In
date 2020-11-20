@@ -10,6 +10,8 @@ class TestData:
     ADDRESS = "Abu Dhabi, Al Nahyan, Building 65, Room:403"
     PHONE_NUMBER = "0528542762"
     FILE_UPLOAD_PATH = "C://Users//fathih//PycharmProjects//demo_automation_in//Test//Image//myavatar.png"
+    SCREENSHOTS_PATH = "C://Users//fathih//PycharmProjects//demo_automation_in//Screenshots//drivertitle.png"
+
 
 
     ENTER_PASSWORD = "abc@123"

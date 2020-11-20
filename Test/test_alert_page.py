@@ -38,6 +38,7 @@ class Test_loginPage(BaseTest):
         if act_title =="Register":
             assert True
         else:
+            self.driver.get_screenshot_as_file(TestData.SCREENSHOTS_PATH)
             assert False
 
         link = None
@@ -52,6 +53,7 @@ class Test_loginPage(BaseTest):
         if act_current_url =="http://demo.automationtesting.in/Register.html":
             assert True
         else:
+            self.driver.get_screenshot_as_file(TestData.SCREENSHOTS_PATH)
             assert False
 
     def test_alert_page(self):
