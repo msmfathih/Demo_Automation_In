@@ -11,6 +11,10 @@ Run Test Suite Collections
 py.test -v -s C:\Users\fathih\PycharmProjects\Rent Vehicles\admin_test_suite
 
 
+Jenkins CMD Argument
+echo %CD%
+set PYTHONPATH=%PYTHONPATH%;%CD%
+py.test -v -s C:\Users\fathih\PycharmProjects\demo_automation_in\Test\test_main_page.py
 
 
 
