@@ -4,7 +4,6 @@ from Locators.Locators import Locators
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 
-
 class MouseHover():
 
     def __init__(self, driver):
