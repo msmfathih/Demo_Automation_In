@@ -65,10 +65,9 @@ class Locators:
     WINDOWS_PAGE_XPATH = "//*[@id='header']/nav/div/div[2]/ul/li[4]/ul/li[2]/a"
     TABBED_CLICK_WINDOW_XPATH = "//*[@id='Tabbed']/a/button"
     SEPERATE_WINDOW_XPATH = "//a[contains(text(),'Open New Seperate Windows')]"
-
     SEPERATE_CLICK_BUTTON_XPATH = "//*[@id='Seperate']/button"
-    SEPERATE_MULTIPLE_WINDOW_XPATH = "//a[contains(text(),'Open Seperate Multiple Windows')]"
-    MULTI_WINDOW_CLICK_BUTTON_XPATH = "//body/div[2]/div[1]/div[1]/div[1]/div[2]/div[3]/button[1]"
+    MULTIPLE_WINDOW_LABLE_XPATH = "//a[contains(text(),'Open Seperate Multiple Windows')]"
+    MULTI_WINDOW_CLICK_BUTTON_XPATH = "//*[@id='Multiple']/button"
 
 
 

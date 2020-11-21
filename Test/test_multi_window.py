@@ -10,15 +10,10 @@ from TestData.config import TestData
 class BaseTest:
     pass
 
-class Test_SepWindowPage(BaseTest):
+class Test_MultiWindowPage(BaseTest):
 
-    def test_window_handler2(self):
+    def test_multi_window_handler(self):
         self.driver.get(TestData.WINDOWS_PAGE_URL)
         self.wp = WindowPage(self.driver)
-        self.wp.click_seperate_window(),time.sleep(3)
+        self.wp.click_multi_window(),time.sleep(3)
         self.driver.quit()
-
-
-
-
-
