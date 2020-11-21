@@ -5,7 +5,7 @@ pip install pytest-xdist
 
 reporting
 py.test -v -s --html=.\Reports\report.html test_home_page.py
-py.test -v -s --html=Reports\reports.html  --self-contained-html test_home_page.py
+py.test -v -s --html=Reports\reports.html test_home_page.py
 
 Run Test Suite Collections
 py.test -v -s C:\Users\fathih\PycharmProjects\Rent Vehicles\admin_test_suite
@@ -15,6 +15,20 @@ Jenkins CMD Argument
 echo %CD%
 set PYTHONPATH=%PYTHONPATH%;%CD%
 py.test -v -s C:\Users\fathih\PycharmProjects\demo_automation_in\Test\test_main_page.py
+
+
+Step1
+1.Create new project repo in github account
+
+Step2
+go to project folder and right click and choose GIT base here
+type in cmd following comments
+git init
+git add ./
+git commit -m "schoolvoice messaging module"  //commit message
+git remote add origin https://github.com/msmfathih/SchoolVoice-Messaging-Module-.git
+git push --set-upstream origin master
+
 
 
 
