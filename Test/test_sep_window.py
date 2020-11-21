@@ -16,28 +16,11 @@ class BaseTest:
 
 class Test_WindowPage(BaseTest):
 
-    def test_window_handler(self):
+    def test_window_handler2(self):
         self.driver.get(TestData.WINDOWS_PAGE_URL)
         self.wp = WindowPage(self.driver)
-        self.wp.click_window_button()
+        self.wp.click_seperate_window(),time.sleep(3)
         self.driver.quit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

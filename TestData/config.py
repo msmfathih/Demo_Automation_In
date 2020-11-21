@@ -1,6 +1,7 @@
 class TestData:
 
     BASE_URL = "http://demo.automationtesting.in/"
+    WINDOWS_PAGE_URL = "http://demo.automationtesting.in/Windows.html"
     USERNAME = "admin@gmail.com"
     PASSWORD = "123"
 
