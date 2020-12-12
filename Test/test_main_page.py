@@ -20,7 +20,7 @@ class BaseTest:
 
 class Test_loginPage(BaseTest):
 
-    # @pytest.mark.run(order=1)
+    @pytest.mark.run(order=1)
     def test_login(self):
         self.driver.get(TestData.BASE_URL)
         self.driver.implicitly_wait(15)
@@ -50,6 +50,7 @@ class Test_loginPage(BaseTest):
         assert verify_invalid_user.text == Locators.VERIFY_EMAIL_MESSAGE
         self.driver.back()
 
+    @pytest.mark.run(order=2)
     def test_enter_valid_password(self):
         self.lp = LoginPage(self.driver)
         self.lp.enter_valid_email(TestData.USERNAME),time.sleep(1)
@@ -68,6 +69,7 @@ class Test_loginPage(BaseTest):
             except NoSuchElementException:
                 time.sleep(2)
 
+    @pytest.mark.run(order=3)
     def test_register_form(self):
         self.rf = RegisterPage(self.driver)
         self.rf.enter_firstname(TestData.FIRST_NAME),time.sleep(2)

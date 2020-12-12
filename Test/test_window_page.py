@@ -1,5 +1,7 @@
 import time
 import pytest
+from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 from Configuration.conftest import init_driver
 from selenium import webdriver
 from Pages.window_page import WindowPage
@@ -16,7 +18,7 @@ class Test_WindowPage(BaseTest):
         self.driver.get(TestData.WINDOWS_PAGE_URL)
         self.wp = WindowPage(self.driver)
         self.wp.click_multi_window()
-        #self.driver.quit()
+        self.driver.quit()
 
 
 
