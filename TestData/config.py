@@ -5,7 +5,7 @@ class TestData:
     USERNAME = "admin@gmail.com"
     PASSWORD = "123"
 
-    FIRST_NAME = "Mohamed"
+    FIRST_NAME = "Aadil"
     LAST_NAME = "Faza"
     ENTER_VALID_EMAIL_ID = "admin@gmail.com"
     ADDRESS = "Abu Dhabi, Al Nahyan, Building 65, Room:403"
