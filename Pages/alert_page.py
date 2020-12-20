@@ -18,7 +18,6 @@ class AlertPage():
         self.alert_textbox_xpath = Locators.ALERT_TEXTBOX_XPATH
         self.alert_textbox_field_xpath = Locators.ALERT_TEXTBOX_FIELD_XPATH
 
-
     def navigate_switch_page(self):
         action = ActionChains(self.driver)
         action.move_to_element(self.driver.find_element(By.XPATH, self.navigate_switch_to_xpath)).perform()

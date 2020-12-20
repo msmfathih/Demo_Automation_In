@@ -16,7 +16,6 @@ class LoginPage():
         self.enter_valid_email_id = Locators.VALID_EMAIL_ID
         self.click_login_button_id = Locators.INDEX_LOGIN_BUTTON_ID
 
-
     def click_on_signin_button(self):
         #self.driver.find_element(By.ID, self.signin_button_id).click()
         try:

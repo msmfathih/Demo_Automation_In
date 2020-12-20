@@ -9,7 +9,6 @@ class Locators:
     VALID_EMAIL_ID = "email"
     INDEX_LOGIN_BUTTON_ID = "enterimg"
 
-
     """
     mouse hover
     """
@@ -22,7 +21,6 @@ class Locators:
     """
     SWITCH_TO_XPATH = "//a[contains(text(),'SwitchTo')]"
     ALERT_TO_XPATH = "//a[contains(text(),'Alerts')]"
-
     ALERT_WITH_OK_XPATH = "//button[contains(text(),'alert box:')]"
     ALERT_WITH_OK_CANCEL_XPATH = "//a[contains(text(),'Alert with OK & Cancel')]"
     ALERT_CANCEL_BUTTON_XPATH = "//button[contains(text(),'click the button to display a confirm box')]"
@@ -61,7 +59,6 @@ class Locators:
     """
     Test_Windown_Page
     """
-
     WINDOWS_PAGE_XPATH = "//*[@id='header']/nav/div/div[2]/ul/li[4]/ul/li[2]/a"
     TABBED_CLICK_WINDOW_XPATH = "//*[@id='Tabbed']/a/button"
     SEPERATE_WINDOW_XPATH = "//a[contains(text(),'Open New Seperate Windows')]"

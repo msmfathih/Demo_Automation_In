@@ -22,7 +22,7 @@ class Test_loginPage(BaseTest):
 
     def test_enter_valid_password(self):
         self.driver.get(TestData.BASE_URL)
-        self.driver.implicitly_wait(15)
+        self.driver.implicitly_wait(10)
 
         self.lp = LoginPage(self.driver)
         self.lp.enter_valid_email(TestData.USERNAME),time.sleep(1)
