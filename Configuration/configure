@@ -11,6 +11,18 @@ Run Test Suite Collections
 py.test -v -s C:\Users\fathih\PycharmProjects\Rent Vehicles\admin_test_suite
 
 
+Setup jenkins 2.22
+
+1. https://www.jenkins.io/download/
+2. download jenkins "Generic java package(war)
+3. put it on any drive and open cmd from there
+4. java -jar jenkins.war (default port)
+   java -jar jenkins.war --httpPort=9090
+5. open browser localhost:8080
+6. C:\Users\fathih\.jenkins\secrets   -  get the password
+
+
+
 Jenkins CMD Argument
 echo %CD%
 set PYTHONPATH=%PYTHONPATH%;%CD%
