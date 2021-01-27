@@ -23,7 +23,7 @@ class Test_loginPage(BaseTest):
     @pytest.mark.run(order=1)
     def test_login(self):
         self.driver.get(TestData.BASE_URL)
-        self.driver.implicitly_wait(15)
+        self.driver.implicitly_wait(10)
         try:
             assert "Index" in self.driver.title
             print("Title is printed")

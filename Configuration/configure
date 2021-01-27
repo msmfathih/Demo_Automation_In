@@ -22,7 +22,6 @@ Setup jenkins 2.22
 6. C:\Users\fathih\.jenkins\secrets   -  get the password
 
 
-
 Jenkins CMD Argument
 echo %CD%
 set PYTHONPATH=%PYTHONPATH%;%CD%
@@ -40,6 +39,7 @@ git add ./
 git commit -m "schoolvoice messaging module"  //commit message
 git remote add origin https://github.com/msmfathih/SchoolVoice-Messaging-Module-.git
 git push --set-upstream origin master
+
 
 
 
